@@ -1,0 +1,420 @@
+@font-face {
+    font-family: Druk Heavy;
+    src: url(./fonts/Druk-Heavy.ttf);
+}   
+@font-face {
+    font-family: Druk-Bold;
+    src: url(./fonts/Druk-Bold.ttf);
+}   
+@font-face {
+    font-family: remixicon;
+    src: url(./fonts/remixicon.ttf);
+}
+@font-face {
+    font-family: yank;
+    src: url(./fonts/yank-webfont.ttf);
+}
+@font-face {
+    font-family: abadi;
+    src: url(./fonts/abadi-mt-condensed-light-webfont.ttf);
+}
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html,body{
+   height: 100%;
+   width: 100%;
+   background-color: rgb(244, 240, 240);
+
+}
+#main{
+   /* height: 600vh; */
+   width: 100%;
+}
+.bottle{
+    z-index: 99999;
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    width: 33vw;
+}
+#sidenav{
+    /* background-color: red; */
+    height: 1vh;
+    width: 500vw;
+    margin-left: -6%;
+    transform-origin: 2%;
+    transform: rotate(90deg);
+    border-top: 5px double black;    
+    z-index: 999;
+}
+
+.page{
+    height: 100vh;
+    width: 88%;
+}
+#sidenav i{
+    transform: rotate(-90deg);
+}
+#nav{
+    z-index: 999;
+    position: absolute;
+    right: 0%;
+    /* top: 0%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    height: 2vh;
+    width: 95%;
+    /* margin   -left: 5.5%; */
+    background-color: rgb(244, 240, 240);
+    /* background-color: #b91616; */
+}
+#nav #icon{
+    width: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -9.5%;
+    gap: 20px;
+
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+#nav img{
+    width: 120px;
+}
+#nav button{
+    background-color: #b91616;
+    padding: 1px 20px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.5VW;
+    font-family: Druk;
+}
+#nav button:hover{
+    cursor: pointer;
+    background-color: black;
+}
+#page1 h1{
+    position: absolute;
+    top: 4.5%;
+    left: 15%;
+    transform: translate(-50%, 40%);
+    width: 80%;
+    text-align: center;
+    font-size: 18vw;
+    font-weight: 100;
+    line-height: 30vh;
+    color:transparent;
+    background: url(https://lagunitas.com/wp-content/themes/lagunitas/assets/images/texture.png) #c21520 no-repeat 50% 50%/1250px auto;
+    font-family: Druk Heavy;
+    -webkit-background-clip: text;
+
+}
+#dog img{
+    width: 7vw;
+    position: absolute;
+    top: 4%;
+    left: 38%;
+    z-index: 99;
+    transform: rotate(-35deg);
+}
+#page2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 88%;
+    position: relative;
+    left: 8%;
+
+}
+#left-text{
+    width: 400px;
+}
+#left-text h4{
+    font-size: 2vw;
+    font-family: "yank";
+    font-weight: 100;
+}
+#left-text h1{
+    line-height: 15vh;
+    font-size: 9vw;
+    font-family: Druk Heavy;
+    font-weight: 500;
+    width: 350px;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+}
+#left-text p{
+    font-family: abadi;
+    margin-bottom: 6%;
+}
+#left-text button{
+    background-color: black;
+    padding: 1px 20px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 2VW;
+    font-family: Druk Heavy;
+}
+#left-text button:hover{
+    cursor: pointer;
+    background-color: #b91616;
+}
+#right-box{
+    min-height: 450px;
+    min-width: 350px;
+    border: 3px solid black;
+    padding: 30px;
+    font-family: abadi;
+    display: grid;
+    gap: 5%;  
+}
+.line{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+}
+#right-box .value{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#right-box h6{
+    width: 150px;
+    text-align: justify;
+}
+#right-box h1{
+    font-size: 5vw;
+    font-family: Druk;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+#right-box a{
+    font-weight: 900;
+    color: black;
+}
+#page3{
+    width: 88%;
+    position: relative;
+    left: 8%;
+}
+#page3 h1{
+    margin-top: -5%;
+    /* transform: translate(-55%, -50%); */
+    width: 100%;
+    text-align: center;
+    font-size: 22vw;
+    font-weight: 500;
+    color:transparent;
+    background: url(https://lagunitas.com/wp-content/themes/lagunitas/assets/images/texture.png) #c21520 no-repeat 50% 50%/1250px auto;
+    -webkit-background-clip: text;
+    font-family: Druk Heavy;
+}
+#page3 #contents{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page3 #contents #left-vid{
+    height: 200px;
+    width: 350px;
+    margin-top: -12%;
+}
+#page3 #contents #left-vid h4{
+    font-size: 26px;
+    font-family: Yank;
+    font-weight: 100;
+    width: 350px;
+}
+#page3 #right-text{
+    height: 350px;
+    width: 300px;
+    font-family: abadi;
+}
+#page3 #right-text #p1{
+    margin-bottom: 7%;
+    font-weight: 600;
+    font-size: 1vw;
+
+}
+#page3 #right-text h3{
+    font-family: Druk Heavy;
+    margin-bottom: 5%;
+
+}
+#page4{
+    margin-top: 12vh;
+    font-family: Druk Heavy;
+    position: relative;
+}
+.flavours{
+    width: 190px;
+    text-align: center;
+    position: absolute;
+    top: 12%;
+    left: 22%;
+    z-index: 99;
+    color: #fff;
+}
+#drop2 .flavours{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+#drop4 .flavours{
+    top: 15%;
+    right: 0%;
+    width: 300px;
+}
+.flavours>i{
+    color: #fff;
+    font-size: 40px;
+    transform: rotate(50deg);
+}
+.flavours h2{
+    text-decoration: underline;
+    margin: 5px ;
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-family: Druk;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.flavours h4{
+    font-size: 14px;
+    font-family: abadi;
+    font-weight: 100;
+}
+#page4 #drop1{
+    position: absolute;
+    top: 25%;
+    left: 6%;
+}
+#page4 #drop1 img{
+    height: 310px;
+    width: 280px;
+}
+#page4 #drop2{
+    position: absolute;
+    top: 50%;
+    left: 23%;
+}
+#page4 #drop2 img{
+    height: 380px;
+    width: 330px;
+}
+#page4 #beerglass{
+    position: absolute;
+    top: 80%;
+    left: 7%;
+}
+#page4 #beerglass img{
+    height: 480px;
+    width: 320px;
+    transform: rotate(-15deg);
+}
+#page4 #drop4{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+}
+#page4 #drop4 img{
+    height: 440px;
+    width: 420px;
+}
+#page5{
+    margin-top: 45vh;
+    width: 100%;
+}
+#page5 #text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#page5 #text h3{
+    margin-left: 5%;
+    font-family: Yank;
+    font-size: 2.5vw;
+    font-weight: 100;
+}
+#page5 #text h1{
+    margin-left: 5%;
+    font-family: Druk Heavy;
+    font-size: 8vw;
+    line-height: 1;
+}
+#page5 #left{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+#page5 #right{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+#page5 #bottles{
+    margin-left: 5%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+#page5 .imgs h4{
+    margin-left: 32%;
+    font-weight: 100;
+    font-size: 1.4vw;
+    opacity: .8;
+    font-family: sans-serif;
+    text-align: start;
+}
+#page6{
+    position: relative;
+    left: 8%;
+    /* background-color: aqua; */
+}
+#page6 h1{
+    position: relative;
+    top: 25%;
+    left: 55%;
+    transform: translate(-55%, -50%);
+    width: 100%;
+    text-align: center;
+    font-size: 20vw;
+    font-weight: 500;
+    color:transparent;
+    background: url(https://lagunitas.com/wp-content/themes/lagunitas/assets/images/texture.png) rgb(8, 40, 29) no-repeat 50% 50%/1250px auto;
+    -webkit-background-clip: text;
+    font-family: Druk Heavy;
+}
+#page6 #divide{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#page6 #divide img{
+    width: 40vw;
+    height: 50vh;
+}
+#page5 img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}

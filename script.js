@@ -48,7 +48,7 @@ gsap.to(".bottle",{
     scroller: "#main",
     start:"top 4.8%",
     end:"top -56%",
-    scrub: 1,
+    scrub: 1.2,
     pin:true,
     // markers: true
 },  
